@@ -28,7 +28,7 @@ public class SpiderLeg {
 	}
 
 	// Give it a URL and it makes an HTTP request for a web page
-	public void crawl(String url) {
+	public Document crawl(String url) {
 		try {
 			Connection connection = Jsoup.connect(url).userAgent(USER_AGENT);
 			Document htmlDocument = connection.get();
@@ -43,8 +43,9 @@ public class SpiderLeg {
 			}
 		} catch (IOException ioe) {
 			// We were not successful in our HTTP request
-			System.out.println("Error in out HTTP request " + ioe);
+			System.out.println("Error ocurred in HTTP request " + ioe);
 		}
+		return htmlDocument;
 	}
 
 	// Tries to find a word on the page

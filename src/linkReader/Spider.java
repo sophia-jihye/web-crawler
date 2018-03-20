@@ -20,6 +20,7 @@ public class Spider {
 	}
 
 	public void search(String url, String searchWord) {
+
 		while (this.pagesVisited.size() < MAX_PAGES_TO_SEARCH) {
 			String currentUrl;
 			SpiderLeg leg = new SpiderLeg();
@@ -30,7 +31,7 @@ public class Spider {
 				currentUrl = this.nextUrl();
 			}
 
-			leg.crawl(currentUrl);
+			System.out.println(leg.crawl(currentUrl));
 
 			boolean success = leg.searchForWord(searchWord);
 			if (success) {
@@ -43,5 +44,6 @@ public class Spider {
 		}
 		System.out.println(String.format("**Done** Visited %s web page(s)",
 				this.pagesVisited.size()));
+
 	}
 }
