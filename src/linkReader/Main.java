@@ -6,7 +6,7 @@ public class Main {
 		Spider spider = new Spider();
 
 		spider.search(
-				"http://www.homemadeginger.com/2017/04/fruit-pizza-crackers.html",
+				"http://ie.snu.ac.kr/ko/board/8",
 				"SUBSCRIBE");
 
 	}
