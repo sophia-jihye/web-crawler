@@ -8,7 +8,7 @@ public class Main {
 		Spider spider = new Spider();
 
 		String userId = "sophia.jihyeparkk";
-		String passwd = "111111";
+		String passwd = "sophia8996";
 		String emailFrom = "sophia.jihyeparkk@gmail.com";
 		String emailTo = "jihyeparkk@naver.com";
 		String subject = "게시판 업데이트 감지~";
