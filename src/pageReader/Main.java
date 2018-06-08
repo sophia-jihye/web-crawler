@@ -11,7 +11,7 @@ public class Main {
 		String passwd = "111111";
 		String emailFrom = "sophia.jihyeparkk@gmail.com";
 		String emailTo = "jihyeparkk@naver.com";
-		String subject = "�Խ��� ������Ʈ ����~";
+		String subject = "게시판 업데이트 감지~";
 		String content = "http://ie.snu.ac.kr/ko/board/8";
 
 		Gmail gmail = new Gmail();
