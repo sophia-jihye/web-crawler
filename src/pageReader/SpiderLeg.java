@@ -10,6 +10,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import samples.util.DateUtil;
+
 public class SpiderLeg {
 
 	// We'll use a fake USER_AGENT so the web server thinks the robot is a
@@ -34,7 +36,8 @@ public class SpiderLeg {
 			Document htmlDocument = connection.get();
 			this.htmlDocument = htmlDocument;
 
-			System.out.println("Received web page at " + url);
+			String dttm = DateUtil.getCurrentTime(DateUtil.MIN_TIME_TYPE);
+			System.out.println("[" + dttm + "] " + "Received web page at " + url);
 
 			Elements linksOnPage = htmlDocument.select("a[href]");
 			for (Element link : linksOnPage) {
@@ -49,7 +52,6 @@ public class SpiderLeg {
 
 	// Tries to find a word on the page
 	public boolean searchForWord(String searchWord) {
-		System.out.println("Searching for the word " + searchWord + "...");
 		if (this.htmlDocument == null || this.htmlDocument.body() == null) {
 			System.out.println("NULL OCCURED");
 			return false;
