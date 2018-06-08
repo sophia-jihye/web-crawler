@@ -8,10 +8,10 @@ public class Main {
 		Spider spider = new Spider();
 
 		String userId = "sophia.jihyeparkk";
-		String passwd = "sophia8996";
+		String passwd = "111111";
 		String emailFrom = "sophia.jihyeparkk@gmail.com";
 		String emailTo = "jihyeparkk@naver.com";
-		String subject = "°Ô½ÃÆÇ ¾÷µ¥ÀÌÆ® °¨Áö~";
+		String subject = "ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½~";
 		String content = "http://ie.snu.ac.kr/ko/board/8";
 
 		Gmail gmail = new Gmail();
